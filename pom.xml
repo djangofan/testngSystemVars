@@ -35,21 +35,16 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven-surefire.version}</version>
 				<configuration>
-				    <showSuccess>true</showSuccess>				
-					<includes>
-						<include>qa/test/tests/**/*.java</include>
-					</includes>
+					<showSuccess>true</showSuccess>
 					<suiteXmlFiles>
-						<suiteXmlFile>${project.build.testOutputDirectory}/${testng.suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>${project.build.testOutputDirectory}/${testng.config-file}</suiteXmlFile>
 					</suiteXmlFiles>
-					<configuration>
-						<systemPropertyVariables>
-							<build-name>${testng.build-name}</build-name>
-							<testenv>${testng.testenv}</testenv>
-						</systemPropertyVariables>
-						<groups>${testng.groups}</groups>
-						<testFailureIgnore>true</testFailureIgnore>
-					</configuration>
+					<systemPropertyVariables>
+						<build-name>${testng.build-name}</build-name>
+						<testenv>${testng.testenv}</testenv>
+					</systemPropertyVariables>
+					<groups>${testng.groups}</groups>
+					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
 			</plugin>
 		</plugins>
