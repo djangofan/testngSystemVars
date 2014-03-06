@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.374 sec <<< FAILURE! - in TestSuite
+testForTestNGtestenvVar(qa.test.tests.SmokeTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: The 'testenv' system variable was not found. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at qa.test.tests.SmokeTest.testForTestNGtestenvVar(SmokeTest.java:31)
+
+testFortestngDOTtestenvVar(qa.test.tests.SmokeTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: The 'testng.testenv' system variable was not found. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at qa.test.tests.SmokeTest.testFortestngDOTtestenvVar(SmokeTest.java:42)
+
