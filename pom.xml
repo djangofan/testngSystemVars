@@ -53,14 +53,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<resources>
-			<resource> <!-- Q: shouldn't this copy to target/test-classes instead -->
-				<directory>src/test/java</directory>
-				<includes>
-					<include>**/*.xls</include>
-				</includes>
-			</resource>
-		</resources>
 	</build>
 	<dependencies>
 		<dependency>
@@ -70,33 +62,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>${selenium-java.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.healthsparq.engine.test</groupId>
-			<artifactId>test-selenium-common</artifactId>
-			<version>${test-selenium-common.version}</version>
-			<classifier>tests</classifier>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.3</version>
 		</dependency>
-		<dependency>
-			<groupId>net.sourceforge.jexcelapi</groupId>
-			<artifactId>jxl</artifactId>
-			<version>${jxl.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>3.5-FINAL</version>
-        </dependency>
 	</dependencies>
 </project>
