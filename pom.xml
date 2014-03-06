@@ -37,7 +37,7 @@
 				<configuration>
 				    <showSuccess>true</showSuccess>				
 					<includes>
-						<include>qa/healthsparq/tests/**/*.java</include>
+						<include>qa/test/tests/**/*.java</include>
 					</includes>
 					<suiteXmlFiles>
 						<suiteXmlFile>${project.build.testOutputDirectory}/${testng.suiteXmlFile}</suiteXmlFile>
